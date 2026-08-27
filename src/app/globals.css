@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+:root {
+  --pink-100: #FFF0F6;
+  --pink-200: #FFD6E8;
+  --pink-300: #FFA6C9;
+  --pink-400: #FF6FA5;
+  --pink-500: #E8417C;
+  --pink-600: #B32659;
+  --ink: #2B1B24;
+  --white: #FFFDFE;
+  --gold: #FFD36E;
+
+  --bg: var(--pink-100);
+  --panel: var(--white);
+  --accent: var(--pink-500);
+}
+
+html[data-secret="1"] {
+  --bg: #2b0f1c;
+  --panel: #3a1526;
+  --accent: var(--gold);
+  --pink-100: #3a1526;
+  --pink-200: #4a1a30;
+  --ink: #ffe9f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "VT323", "IBM Plex Sans Thai", "Noto Sans Thai", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  /* clip (not hidden) so body does not become its own scroll container,
+     which would break window.scrollY, the HUD score and PRESS RESET */
+  overflow-x: clip;
+  image-rendering: pixelated;
+}
+
+.font-pixel {
+  font-family: "Press Start 2P", monospace;
+}
+
+.font-thai {
+  font-family: "IBM Plex Sans Thai", "Noto Sans Thai", sans-serif;
+}
+
+.font-body {
+  font-family: "VT323", "IBM Plex Sans Thai", "Noto Sans Thai", monospace;
+}
+
+img, .pixelated {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* hard pixel border + offset shadow utility */
+.pixel-border {
+  border: 4px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.pixel-border-sm {
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.pixel-btn {
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  background: var(--pink-300);
+  transition: transform 0.05s ease;
+}
+.pixel-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+/* checker dither background */
+.dither-bg {
+  background-image:
+    linear-gradient(45deg, var(--pink-200) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--pink-200) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--pink-200) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--pink-200) 75%);
+  background-size: 8px 8px;
+  background-position: 0 0, 0 4px, 4px -4px, -4px 0px;
+  background-color: var(--pink-100);
+}
+
+/* scanline overlay */
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.06),
+    rgba(0,0,0,0.06) 1px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.blink {
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.15); }
+  40% { transform: scale(0.95); }
+  60% { transform: scale(1.1); }
+}
+.heartbeat {
+  animation: heartbeat 1.2s steps(6) infinite;
+}
+
+@keyframes crtflash {
+  0% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes step-in-left {
+  0% { opacity: 0; transform: translate(-24px, 12px); }
+  100% { opacity: 1; transform: translate(0, 0); }
+}
+@keyframes step-in-right {
+  0% { opacity: 0; transform: translate(24px, 12px); }
+  100% { opacity: 1; transform: translate(0, 0); }
+}
+@keyframes step-in-up {
+  0% { opacity: 0; transform: translate(0, 24px); }
+  100% { opacity: 1; transform: translate(0, 0); }
+}
+
+.reveal-left {
+  animation: step-in-left 0.4s steps(6) forwards;
+}
+.reveal-right {
+  animation: step-in-right 0.4s steps(6) forwards;
+}
+.reveal-up {
+  animation: step-in-up 0.4s steps(6) forwards;
+}
+
+.pre-reveal {
+  opacity: 0;
+}
+
+@keyframes floatup {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-120px); opacity: 0; }
+}
+
+/* segmented bar block */
+.stat-block {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 2px solid var(--ink);
+  background: var(--pink-200);
+}
+.stat-block.filled {
+  background: var(--pink-500);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pink-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pink-400);
+  border: 2px solid var(--ink);
+}

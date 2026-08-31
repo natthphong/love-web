@@ -1,34 +1,49 @@
 import type { Metadata } from "next";
-import { Press_Start_2P, VT323, IBM_Plex_Sans_Thai } from "next/font/google";
+import {
+  Playfair_Display,
+  Noto_Serif_Thai,
+  IBM_Plex_Sans_Thai,
+  IBM_Plex_Mono,
+} from "next/font/google";
 import "./globals.css";
 
-const pressStart = Press_Start_2P({
-  weight: "400",
+const serif = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-pixel",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
   display: "swap",
 });
 
-const vt323 = VT323({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-vt",
-  display: "swap",
-});
-
-const plexThai = IBM_Plex_Sans_Thai({
-  weight: ["400", "500", "600"],
+const serifThai = Noto_Serif_Thai({
   subsets: ["thai", "latin"],
-  variable: "--font-thai",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-serif-th",
+  display: "swap",
+});
+
+const sansThai = IBM_Plex_Sans_Thai({
+  subsets: ["thai", "latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-sans-th",
+  display: "swap",
+});
+
+const mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "LOVE QUEST — 3rd Anniversary",
-  description: "A pixel-art RPG love story — 3 years and counting.",
+  title: "เรื่องของเรา — สารคดีความรัก ๓ ปี",
+  description:
+    "A three-year love documentary — 16 chapters, told through real Instagram moments. ต้า & pvanaparin.",
   openGraph: {
-    title: "LOVE QUEST — 3rd Anniversary",
-    description: "A pixel-art RPG love story — 3 years and counting.",
+    title: "เรื่องของเรา — สารคดีความรัก ๓ ปี",
+    description:
+      "A three-year love documentary — told through real Instagram moments from Nov 2023 to Jul 2026.",
     type: "website",
   },
 };
@@ -39,12 +54,9 @@ export default function RootLayout({
   return (
     <html
       lang="th"
-      className={`${pressStart.variable} ${vt323.variable} ${plexThai.variable} h-full`}
+      className={`${serif.variable} ${serifThai.variable} ${sansThai.variable} ${mono.variable}`}
     >
-      <body className="min-h-full flex flex-col dither-bg">
-        <div className="scanlines" />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

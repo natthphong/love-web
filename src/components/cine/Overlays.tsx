@@ -34,7 +34,7 @@ export function Overlays() {
       </div>
       <div className="hud hud-tr">f/1.8 · 24fps · ราชวงศ์</div>
       <div className="hud hud-bl">เรื่องของเรา · สารคดีความรัก ๓ ปี</div>
-      <div className="hud hud-br">ต้า & pvanaparin</div>
+      <div className="hud hud-br">ต้าร์ & ฟร้อนท์</div>
     </>
   );
 }

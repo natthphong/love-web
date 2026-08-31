@@ -1,7 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { useRevealOnScroll } from "@/components/cine/useReveal";
 import { Overlays } from "@/components/cine/Overlays";
+import { Gate, wasUnlocked } from "@/components/cine/Gate";
 import { Hero } from "@/components/cine/Hero";
 import { ActDivider } from "@/components/cine/ActDivider";
 import { Chapter } from "@/components/cine/Chapter";
@@ -9,10 +11,8 @@ import { StoriesReel } from "@/components/cine/StoriesReel";
 import { Finale } from "@/components/cine/Finale";
 import { chapters } from "@/data/film";
 
-export default function Page() {
+function Documentary() {
   const ref = useRevealOnScroll();
-
-  // acts: I (2023) = ch 1-3, II (2024) = ch 4-6, III (2025) = ch 7-10, IV (2026) = ch 11-16
   const I = chapters.slice(0, 3);
   const II = chapters.slice(3, 6);
   const III = chapters.slice(6, 10);
@@ -20,7 +20,6 @@ export default function Page() {
 
   return (
     <div ref={ref as React.RefObject<HTMLDivElement>} id="top" className="relative">
-      <Overlays />
       <Hero />
 
       <ActDivider
@@ -65,6 +64,21 @@ export default function Page() {
 
       <StoriesReel />
       <Finale />
+    </div>
+  );
+}
+
+export default function Page() {
+  const [locked, setLocked] = useState(!wasUnlocked());
+
+  return (
+    <div className="relative">
+      <Overlays />
+      {locked ? (
+        <Gate onUnlock={() => setLocked(false)} />
+      ) : (
+        <Documentary />
+      )}
     </div>
   );
 }

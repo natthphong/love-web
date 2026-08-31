@@ -3,7 +3,7 @@ import { chapters } from "@/data/film";
 const totalShots = chapters.reduce((n, c) => n + c.media.length, 0);
 
 const CREDITS: { role: string; name: string }[] = [
-  { role: "STARRING", name: "ต้า · pvanaparin" },
+  { role: "STARRING", name: "ต้าร์ · ฟร้อนท์" },
   { role: "DIRECTED BY", name: "ความรัก" },
   { role: "RUNTIME", name: "3 ปี (แล้วก็ต่อไป)" },
   { role: "CHAPTERS", name: `${chapters.length} ตอน` },

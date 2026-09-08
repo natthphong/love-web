@@ -11,7 +11,7 @@ const CREDITS: { role: string; name: string }[] = [
   { role: "LOCATION", name: "ห้าง · ทะเล · ภูเขา · เซินเจิ้น · ฮ่องกง · บ้าน" },
   { role: "SCORE", name: "ความเงียบ และเสียงหัวเราะ" },
   { role: "FORMAT", name: "16:9 · 24fps · film" },
-  { role: "A FILM BY", name: "เราสองคน" },
+  { role: "A FILM BY", name: "ต้าร์ & ฟร้อนท์" },
 ];
 
 export function Finale() {
@@ -52,7 +52,7 @@ export function Finale() {
         className="reveal reveal-d4 mt-20 text-[var(--paper-dim)]"
         style={{ fontFamily: "var(--ff-mono)", fontSize: "11px", letterSpacing: "0.3em" }}
       >
-        © 2023 – 2026 · เรื่องของเรา
+        © 2023 – 2026 · เรื่องของต้าร์
       </p>
       <a
         href="#top"

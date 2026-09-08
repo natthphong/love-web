@@ -62,7 +62,7 @@ export function Hero() {
             animationDelay: "0.6s",
           }}
         >
-          เรื่องของเรา
+          เรื่องของต้าร์
         </h1>
         <p
           className="title-in mt-3 text-[var(--gold)]"

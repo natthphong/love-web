@@ -64,7 +64,7 @@ export function Gate({ onUnlock }: { onUnlock: () => void }) {
             animationDelay: "0.4s",
           }}
         >
-          เรื่องของเรา
+          เรื่องของต้าร์
         </h1>
         <p
           className="title-in mt-2 text-[var(--gold)]"

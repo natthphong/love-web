@@ -22,7 +22,7 @@ export const chapters: Chapter[] = [
     date: "28 พฤศจิกายน 2023",
     time: "11:23 น.",
     caption: "เดทกับหนุ่มตี๋",
-    narrative: "โพสต์แรกของฟร้อนท์ แล้วก็ของเรา วันนั้นฟร้อนท์ถ่ายรูปฉันยืนอยู่กลางห้าง เธอเขียนแคปชั่นสั้นๆ แค่ว่า ‘เดทกับหนุ่มตี๋’ — เธอเรียกฉันว่าหนุ่มตี๋ วันนั้ยังไม่มีใครรู้หรอกว่ารูปนี้จะกลายเป็นจุดเริ่มต้นที่เรานับเวลาต่อจากนี้ไปอีกสามปี",
+    narrative: "โพสต์แรก ฟร้อนท์ถ่ายต้าร์ยืนกลางห้าง ‘เดทกับหนุ่มตี๋’ — วันนั้ยังไม่มีใครรู้ว่ามันจะนับต่อไปอีกสามปี",
     layout: "hero",
     media: [
       { src: "/media/posts/C0LRo6ELYcwNHnNK4yVaOSpb9On20fb2uHbcLA0/01.jpg", type: "image" },
@@ -43,7 +43,7 @@ export const chapters: Chapter[] = [
     date: "6 ธันวาคม 2023",
     time: "21:55 น.",
     caption: "อิ่มฟามรัก",
-    narrative: "ฟร้อนท์เขียนสั้นๆ แต่จบใจ — ‘อิ่มฟาม รัก’ คำเดียวจบ วันธรรมดาที่ไม่ธรรมดา จากห้าง ไปหมูกะทะ ไปถ่ายรูปขำๆ ไม่มีอะไรพิเศษ นอกจากฟร้อนท์ข้างๆ ที่ทำให้ทุกวันของฉันพิเศษ",
+    narrative: "’อิ่มฟาม รัก’ คำเดียวจบ วันธรรมดาที่ไม่ธรรมดา",
     layout: "strip",
     media: [
       { src: "/media/posts/C0hAT_fhnwObDTS7gA2JzsTEhpXE6cFBmdyIoo0/01.mp4", type: "video", poster: "/media/posts/C0hAT_fhnwObDTS7gA2JzsTEhpXE6cFBmdyIoo0/01_poster.jpg" },
@@ -63,7 +63,7 @@ export const chapters: Chapter[] = [
     date: "12 ธันวาคม 2023",
     time: "22:40 น.",
     caption: "พี่ต้าร์บอกจะลดน้ำหนักกกกกก",
-    narrative: "คลิปขำๆ ที่ฉันบอกฟร้อนท์ว่าจะลดน้ำหนัก — แล้วก็ไม่เคยลด ประโยคที่ฉันพูดทุกปี แล้วก็ยังกินดี ยังอ้วนดี ยังรักกันดี",
+    narrative: "ต้าร์บอกจะลดน้ำหนัก — แล้วก็ไม่เคยลด ยังกินดี ยังรักกันดี",
     layout: "video",
     media: [
       { src: "/media/posts/C0wiK4QB1n5zjoBpcTm92_a2xwFvWRnx6MvrfY0/01.mp4", type: "video", poster: "/media/posts/C0wiK4QB1n5zjoBpcTm92_a2xwFvWRnx6MvrfY0/01_poster.jpg" },
@@ -79,7 +79,7 @@ export const chapters: Chapter[] = [
     date: "15 กุมภาพันธ์ 2024",
     time: "11:18 น.",
     caption: "วาเลนไทน์ปีแรกกับต้า",
-    narrative: "วาเลนไทน์ปีแรกของเรา — ฉันซื้อดอกไม้ baby’s breath ช่อเล็กๆ ให้ฟร้อนท์ ไม่หรู แต่เป็นดอกแรก แล้วก็เป็นปีแรกที่เริ่มนับว่า ‘ปีนี้’ ของเรา",
+    narrative: "วาเลนไทน์ปีแรก ต้าร์ซื้อดอกไม้ช่อเล็กๆ ให้ฟร้อนท์ ไม่หรู แต่เป็นดอกแรก",
     layout: "solo",
     media: [
       { src: "/media/posts/C3Wr4m_PXEWJCif5HDr7E99Kuevc3fFRxg6QF40/01.jpg", type: "image" },
@@ -91,7 +91,7 @@ export const chapters: Chapter[] = [
     date: "15 กุมภาพันธ์ 2024",
     time: "11:16 น.",
     caption: "แฮปปี้วาเลนไทน์เดย์ 💗",
-    narrative: "อีกโพสต์ในวันเดียว — ฟร้อนท์เขียน ‘แฮปปี้วาเลนไทน์เดย์ 💗’ เช้าวันรัก ถ่ายรูปกันในกระจกห้าง แล้วก็ไปต่อ วันที่มีแค่ฉันกับฟร้อนท์ กับดอกไม้ช่อเดียว",
+    narrative: "อีกโพสต์ในวันเดียว ‘แฮปปี้วาเลนไทน์เดย์ 💗’ ถ่ายรูปกันในกระจกห้าง",
     layout: "duo",
     media: [
       { src: "/media/posts/C3WrnuevAzsLMq9ne86w_UjVBeFdGPOETmQtDE0/01.jpg", type: "image" },
@@ -108,7 +108,7 @@ export const chapters: Chapter[] = [
     date: "4 เมษายน 2024",
     time: "20:14 น.",
     caption: "มึนนนนนนนน",
-    narrative: "เม.ย. เดือนแรกที่เราเที่ยวด้วยกัน สวนสนุก ขี่วิ่ง น้ำสาด เสียงฟร้อนท์หัวเราะดังกว่าเสียงเครื่องเล่น เธอสรุปความรู้สึกวันนั้นได้คำเดียว — ‘มึนนนนนนนน’",
+    narrative: "เที่ยวครั้งแรก สวนสนุก ขี่วิ่ง น้ำสาด ‘มึนนนนนนนน’",
     layout: "strip",
     media: [
       { src: "/media/posts/C5V0KWYhEQudNSFNCDL_N1SpdgdVGirSccHauQ0/01.jpg", type: "image" },
@@ -128,7 +128,7 @@ export const chapters: Chapter[] = [
     date: "14 กุมภาพันธ์ 2025",
     time: "00:09 น.",
     caption: "我都会一直爱你",
-    narrative: "วาเลนไทน์ปีที่สอง — ฉันซื้อกุหลาบแดงให้ฟร้อนท์ แล้วก็เขียนภาษาจีน ‘我都会一直爱你’ — ฉันจะรักเธอตลอดไป ปีที่เริ่มพูดกันเป็นภาษาอื่น เพราะบางครั้งคำว่ารัก พูดในภาษาตัวเองยังไม่พอ",
+    narrative: "วาเลนไทน์ปีที่สอง กุหลาบแดง แล้วก็ ‘我都会一直爱你’ — ฉันจะรักเธอตลอดไป",
     layout: "duo",
     media: [
       { src: "/media/posts/DGBVc10So0q-YDr84y3O2d-1fUU9cFhZeHQkVo0/01.jpg", type: "image" },
@@ -143,7 +143,7 @@ export const chapters: Chapter[] = [
     date: "27 กรกฎาคม 2025",
     time: "19:45 น.",
     caption: "",
-    narrative: "วันที่ไม่มีแคปชั่น — แค่ฟร้อนท์ถ่ายรูปคู่กับฉันในสนาม ยืนตรงเส้นวิ่งสีแดง ไม่มีเรื่องอะไร แค่อยู่ด้วยกัน แล้วก็กดถ่าย บางวัน นั้นแหละคือเนื้อหา",
+    narrative: "ไม่มีแคปชั่น แค่ถ่ายรูปคู่ในสนาม บางวัน นั้นแหละคือเนื้อหา",
     layout: "duo",
     media: [
       { src: "/media/posts/DMnJkuuhb5-HtvOmOYH6Kt_W4rLCsS9uwpCx2o0/01.jpg", type: "image" },
@@ -156,7 +156,7 @@ export const chapters: Chapter[] = [
     date: "15 พฤศจิกายน 2025",
     time: "21:27 น.",
     caption: "งิงิ",
-    narrative: "พระอาทิตย์ตกริมทะเล ฉันกับฟร้อนท์ยืนชมวิว ถ่ายรูปกับเจดีย์เงา สีฟ้าจางๆ เหมือนหนัง ฟร้อนท์เขียนแค่ ‘งิงิ’ — เพราะบางมุม ไม่ต้องพูดอะไร แค่ยืนอยู่ตรงนั้นกับเธอก็พอ",
+    narrative: "พระอาทิตย์ตกริมทะเล ‘งิงิ’ — บางมุม ไม่ต้องพูดอะไร",
     layout: "hero",
     media: [
       { src: "/media/posts/DRFJbxXjzp9y1BA7KaLk4i073IjhYnVrduLViU0/01.jpg", type: "image" },
@@ -173,7 +173,7 @@ export const chapters: Chapter[] = [
     date: "19 พฤศจิกายน 2025",
     time: "19:34 น.",
     caption: "แม่เลี้ยงดีมากกกกก",
-    narrative: "โพสต์ที่เป็นอาหารั ๑๓ รูป — ฟร้อนท์ถ่ายซาซิมิ หมูกระทะ บะหมี่ริมทะเล ต้มตำ ขนมจีน แล้วเขียน ‘แม่เลี้ยงดีมาก’ ฉันไม่รู้ว่าสองอย่างนี้เกี่ยวข้องกันยังไง แต่มันก็เกี่ยวกัน",
+    narrative: "๑๓ รูป ซาซิมิ หมูกระทะ บะหมี่ ‘แม่เลี้ยงดีมาก’",
     layout: "strip",
     media: [
       { src: "/media/posts/DRPPuZFj9GQozBwqvjNDWf_2lamgTvgIYWrsOY0/01.jpg", type: "image" },
@@ -197,7 +197,7 @@ export const chapters: Chapter[] = [
     date: "14 กุมภาพันธ์ 2026",
     time: "22:44 น.",
     caption: "Happy valentine day ดอกไม้12ดอก ปีที่สามงับ",
-    narrative: "วาเลนไทน์ปีที่สาม — ดอกไม้ ๑๒ ดอกให้ฟร้อนท์ ไม่ได้เยอะจนล้นมือ แต่นับได้ครบทุกดอก เหมือนเวลาที่ผ่านมาที่นับได้ครบทุกวัน ปีที่สามงับ",
+    narrative: "วาเลนไทน์ปีที่สาม ดอกไม้ ๑๒ ดอก นับได้ครบทุกดอก",
     layout: "hero",
     media: [
       { src: "/media/posts/DUvmqGbD0LOvmqMUM9XfuOIrq4Y2akeIPXR4lY0/01.jpg", type: "image" },
@@ -210,7 +210,7 @@ export const chapters: Chapter[] = [
     date: "30 มีนาคม 2026",
     time: "23:48 น.",
     caption: "",
-    narrative: "ทริปจีน เซินเจิ้น วันแรก — ฉันกับฟร้อนท์วิ่งรถไฟใหญ่ ชมฟ้าใหญ่ ล้อเฟอร์ริสใหญ่ นั่งแท็กซี่สีแดง ถ่ายรูปกันในกระจก ทุกอย่างใหญ่ ยกเว้นระยะห่างระหว่างเรา ที่เริ่มชิดกันทุกวัน",
+    narrative: "ทริปจีน เซินเจิ้น ทุกอย่างใหญ่ ยกเว้นระยะห่างที่ชิดกันทุกวัน",
     layout: "strip",
     media: [
       { src: "/media/posts/DWhA-6wDxza4iJqieZQoyh47pVJiL9vj0AOC0w0/01.jpg", type: "image" },
@@ -231,7 +231,7 @@ export const chapters: Chapter[] = [
     date: "2 เมษายน 2026",
     time: "10:55 น.",
     caption: "ไอตี๋นี่มัน",
-    narrative: "๑๖ รูปที่ฟร้อนท์ถ่ายฉันในเซินเจิ้น — เธอให้ฉันยืนถ่ายทุกมุม ข้ามถนั หน้าฟ้าใหญ่ หน้าล้อเฟอร์ริส แล้วเขียน ‘ไอตี๋นี่มัน’ — สรุปความรู้สึกที่เธอมีต่อฉัน ในเมืองที่ไม่ใช่บ้านตัวเอง",
+    narrative: "๑๖ รูปในเซินเจิ้น ‘ไอตี๋นี่มัน’",
     layout: "strip",
     media: [
       { src: "/media/posts/DWnW2QImMoHVYNtXzrH7CrGkrCdbOLW1XTbscA0/01.jpg", type: "image" },
@@ -258,7 +258,7 @@ export const chapters: Chapter[] = [
     date: "2 เมษายน 2026",
     time: "21:40 น.",
     caption: "",
-    narrative: "จากเซินเจิ้น ฉันพาฟร้อนท์ข้ามไปฮ่องกง — ดิสนี่แลนด์ ปราสาทที่เธอเคยเห็นแต่ในหนัง วันที่เราเป็นเด็กๆ อีกครั้ง ในเมืองที่ผู้ใหญ่ไม่จำเป็นต้องโต",
+    narrative: "จากเซินเจิ้น ไปฮ่องกง ดิสนี่แลนด์ วันที่ต้าร์เป็นเด็กๆ อีกครั้ง",
     layout: "duo",
     media: [
       { src: "/media/posts/DWogok3GLcKJxTF8Q8pr8uTNUM7SUV78cv2Lqg0/01.jpg", type: "image" },
@@ -271,7 +271,7 @@ export const chapters: Chapter[] = [
     date: "31 พฤษภาคม 2026",
     time: "14:19 น.",
     caption: "FinFin",
-    narrative: "ทะเล ทราย แสง และก็เรา — ฟร้อนท์ตั้งชื่อโพสต์ว่า FinFin วันที่เราเอาแค่หน้างทะเล กาแฟร้อน แล้วกันนั่งดูพระอาทิตย์ตกจนมืด ป้ายเขียนไว้ ‘you are my favorite sunset’ — เราไม่ต้องอ่าน ก็รู้",
+    narrative: "ทะเล ทราย แสง FinFin ‘you are my favorite sunset’",
     layout: "strip",
     media: [
       { src: "/media/posts/DY_pD8FGJRrk0R7kGIWURc_n1swZOvfijhpMsE0/01.jpg", type: "image" },
@@ -294,7 +294,7 @@ export const chapters: Chapter[] = [
     date: "31 กรกฎาคม 2026",
     time: "21:37 น.",
     caption: "ใครมาธิสั้นสุด",
-    narrative: "โพสต์ล่าสุด — คลิปเดียว ฟร้อนท์เขียน ‘ใครมาธิสั้นสุด’ เหมือนปิดเรื่อง แต่เรายังไม่ปิด สามปีแล้ว แล้วก็ยังมีตอนต่อไป",
+    narrative: "’ใครมาธิสั้นสุด’ เหมือนปิดเรื่อง แต่ยังไม่ปิด สามปีแล้ว แล้วก็ยังมีตอนต่อไป",
     layout: "video",
     media: [
       { src: "/media/posts/DbdfoiFg5w4BlQzRZy2KCR_2sguIJb18DnTpVk0/01.mp4", type: "video", poster: "/media/posts/DbdfoiFg5w4BlQzRZy2KCR_2sguIJb18DnTpVk0/01_poster.jpg" },

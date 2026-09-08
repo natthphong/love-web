@@ -9,6 +9,7 @@ import { ActDivider } from "@/components/cine/ActDivider";
 import { Chapter } from "@/components/cine/Chapter";
 import { StoriesReel } from "@/components/cine/StoriesReel";
 import { Finale } from "@/components/cine/Finale";
+import { GalleryScroll } from "@/components/cine/GalleryScroll";
 import { Soundtrack } from "@/components/cine/Soundtrack";
 import { chapters } from "@/data/film";
 
@@ -27,7 +28,7 @@ function Documentary() {
         roman="I"
         title="จุดเริ่มต้น"
         year="2023"
-        subtitle="โพสต์แรกปักหมุดไว้บนหน้าโปรไฟล์ — วันนั้นยังไม่มีใครรู้ว่ามันจะนับต่อไปอีกสามปี"
+        subtitle="โพสต์แรก วันที่ยังไม่มีใครรู้ว่ามันจะนับต่อไป"
       />
       {I.map((ch) => (
         <Chapter key={ch.id} ch={ch} />
@@ -35,9 +36,9 @@ function Documentary() {
 
       <ActDivider
         roman="II"
-        title="ปีแรกของเรา"
+        title="ปีแรก"
         year="2024"
-        subtitle="วาเลนไทน์ปีแรก เที่ยวด้วยกันครั้งแรก เริ่มนับว่า ‘ปีนี้’ ของเรา"
+        subtitle="วาเลนไทน์ปีแรก เที่ยวครั้งแรก"
       />
       {II.map((ch) => (
         <Chapter key={ch.id} ch={ch} />
@@ -47,7 +48,7 @@ function Documentary() {
         roman="III"
         title="ปีที่สอง"
         year="2025"
-        subtitle="ปีที่เริ่มพูดว่ารักกันเป็นภาษาอื่น แล้วก็ยังกินกันเยอะขึ้น"
+        subtitle="ปีที่เริ่มพูดว่ารักเป็นภาษาอื่น"
       />
       {III.map((ch) => (
         <Chapter key={ch.id} ch={ch} />
@@ -57,7 +58,7 @@ function Documentary() {
         roman="IV"
         title="ปีที่สาม"
         year="2026"
-        subtitle="วาเลนไทน์ปีที่สาม ทริปจีน-ฮ่องกง ทะเล แล้วก็ยังมีตอนต่อไป"
+        subtitle="วาเลนไทน์ปีที่สาม ทริปจีน-ฮ่องกง"
       />
       {IV.map((ch) => (
         <Chapter key={ch.id} ch={ch} />
@@ -65,6 +66,7 @@ function Documentary() {
 
       <StoriesReel />
       <Finale />
+      <GalleryScroll />
     </div>
   );
 }

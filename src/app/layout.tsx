@@ -37,11 +37,11 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "เรื่องของเรา — สารคดีความรัก ๓ ปี",
+  title: "เรื่องของต้าร์ — สารคดีความรัก ๓ ปี",
   description:
     "A three-year love documentary — 16 chapters, told through real Instagram moments. ต้า & pvanaparin.",
   openGraph: {
-    title: "เรื่องของเรา — สารคดีความรัก ๓ ปี",
+    title: "เรื่องของต้าร์ — สารคดีความรัก ๓ ปี",
     description:
       "A three-year love documentary — told through real Instagram moments from Nov 2023 to Jul 2026.",
     type: "website",

@@ -9,6 +9,7 @@ import { ActDivider } from "@/components/cine/ActDivider";
 import { Chapter } from "@/components/cine/Chapter";
 import { StoriesReel } from "@/components/cine/StoriesReel";
 import { Finale } from "@/components/cine/Finale";
+import { Soundtrack } from "@/components/cine/Soundtrack";
 import { chapters } from "@/data/film";
 
 function Documentary() {
@@ -77,7 +78,10 @@ export default function Page() {
       {locked ? (
         <Gate onUnlock={() => setLocked(false)} />
       ) : (
-        <Documentary />
+        <>
+          <Soundtrack />
+          <Documentary />
+        </>
       )}
     </div>
   );
